@@ -1,0 +1,22 @@
+.card {
+  aspect-ratio: 1/1;
+  align-items: end;
+  border-radius: var(--radius);
+  border: 1.5px solid var(--dark-gray);
+  display: grid;
+  gap: 20px;
+  padding: 25px 25px 5px 25px;
+  color: white;
+  grid-template-rows: 0.2fr 0.7fr 0.1fr;
+  animation: appear 0.1s ease;
+  animation-timeline: view();
+  animation-range: cover 0% cover 30%;
+}
+
+.card p {
+  font-weight: 900;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}

@@ -1,0 +1,39 @@
+dialog{
+  border: none;
+  border-radius: var(--radius);
+  padding: 20px;
+  overflow-y: scroll;
+  max-height: 80vh;
+  max-width: 90%;
+}
+
+dialog::backdrop {
+  background-color: #101010;
+  opacity: 0.8;
+}
+
+.dialog-top{
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dialog-tittle{
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.dialog-body{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  
+} 
+

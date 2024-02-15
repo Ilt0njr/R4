@@ -1,0 +1,63 @@
+@import "./css/geral.css";
+
+
+
+/*__________HEADER___________*/
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  font-size: clamp(2.2rem, 5vw, 3rem);
+  padding: 0 50px;
+  color: white;
+  font-weight: 900;
+  gap: 10px;
+}
+
+.header-img {
+  width: 100%;
+}
+
+.button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/*_____________CARDS SECTION________*/
+
+.cards-section {
+  margin: 50px clamp(20px, 1vw, 50px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+/*_____________KNOW ASSISTANT________*/
+
+.know-assistant {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  align-items: center;
+  color: white;
+  padding: 50px;
+  font-size: clamp(1rem, 4.5vw, 1.4rem);
+}
+
+.know-assistant h3 {
+  font-weight: 900;
+  color: var(--primary);
+  font-size: clamp(1.5rem, 5vw, 2rem);
+}
+
+.know-assistant img {
+  width: 100%;
+  animation: appear 0.1s ease;
+  animation-timeline: view();
+  animation-range: cover 0% cover 30%;
+}

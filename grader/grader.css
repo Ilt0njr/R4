@@ -1,0 +1,92 @@
+@import "../css/geral.css";
+
+
+/*______________HEADER___________*/
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, clamp(100px, 100vw, 400px)));
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 20px;
+
+}
+
+.header a {
+  color: var(--primary);
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+.header p {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 400;
+}
+
+
+.header img {
+  width: 100%;
+}
+
+/*______________BUTTONS WRAPPER___________*/
+
+.buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 20px;
+}
+
+/*______________VIDEO_____________*/
+
+#video-box {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  display: none;
+  left: 0;
+}
+
+.video-top-box {
+  width: 90%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  padding: 15px;
+  color: white;
+  z-index: 999;
+}
+
+
+.video-btns-wrapper {
+  display: grid;
+  grid-template-columns: 50px 50px;
+  justify-items: center;
+  gap: 5px;
+  background-color: var(--dark);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.result-box {
+  font-size: 0.8rem;
+  grid-column: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 10px 5px 10px;
+  transition: all 0.5s ease-out;
+}
+
+#input-video {
+  all: unset;
+  width: 100%;
+  height: 100%;
+}

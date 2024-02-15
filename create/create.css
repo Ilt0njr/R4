@@ -1,0 +1,145 @@
+@import "../css/geral.css";
+
+
+/*______________HEADER___________*/
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, clamp(100px, 100vw, 400px)));
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 20px;
+
+}
+
+.header a {
+  color: var(--primary);
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+.header p {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 400;
+}
+
+
+.header img {
+  width: 100%;
+}
+
+
+
+/*__________________IMPORT________________*/
+
+.import-preview-wrapper {
+  display: grid;
+  grid-template-columns: 0.8fr 0.2fr;
+  padding: 20px;
+  border-radius: var(--radius);
+  margin: 10px;
+  border: 1.5px solid var(--light-gray);
+  gap: 10px;
+}
+
+.search-input-wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 5px;
+  border: 1.5px solid var(--light-gray);
+  padding: 5px 15px;
+}
+
+.search-input{
+  width: clamp(500px, 60vw, 1000px);
+  outline: none;
+  border: none;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+
+/*______________BUTTONS WRAPPER___________*/
+
+.buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 20px;
+}
+
+
+#exam {
+  padding: 0;
+  list-style: none;
+  margin: 20px;
+  border-radius: var(--radius);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.q-num {
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+form .label {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+form .top-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form .icons-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.q-option {
+  margin: 1vw;
+  display: grid;
+  grid-template-columns: 0.1fr 0.8fr 0.1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.q-option textarea {
+  width: 80%;
+}
+
+
+.q-option .qA {
+  font-weight: 900;
+}
+
+.image-text {
+  border-radius: 10px;
+  margin: 10px;
+  border: 1px solid #11181D;
+}
+
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}

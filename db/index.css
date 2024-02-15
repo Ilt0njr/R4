@@ -1,0 +1,63 @@
+@import "../css/geral.css";
+
+
+.header{
+  font-size: clamp(2.2rem, 5vw, 3rem);
+  padding: 50px;
+  color: var(--primary);
+  font-weight: 900;
+}
+
+
+
+/*__________________SEARCH________________*/
+
+.search-input-wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px;
+  border-radius: 100px;
+  padding: 5px 20px;
+  background-color: white;
+}
+
+.search-input{
+  width: clamp(500px, 60vw, 1000px);
+  outline: none;
+  border: none;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+/*__________________RENDER________________*/
+
+#renderList{
+  all: unset;
+}
+
+.question{
+  background-color: white;
+  margin: 30px;
+  padding: 30px;
+  border-radius: var(--radius);
+}
+
+.alts-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.alt{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  gap: 20px;
+}
+
+.alt span{
+  font-weight: 900;
+}
+
