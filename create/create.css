@@ -55,7 +55,7 @@
 }
 
 .search-input{
-  width: clamp(500px, 60vw, 1000px);
+  width: clamp(200px, 60vw, 1000px);
   outline: none;
   border: none;
   padding: 10px;
