@@ -51,7 +51,11 @@ const render = async () => {
     if (!questions[i]) return
     const preview = document.createElement("li")
     preview.style = "list-style: none"
-    const chips = questions[i].tags.map(e => `<span class="chip">${e.toUpperCase()}</span>`)
+    let chips = ""
+    for (let j = 0; j < questions[i].tags.length; j++) {
+      chips += `<a class="chip">${questions[i].tags[j].toUpperCase()}</a>`
+    }
+    
     const body = _PREVIEW_TEMPLATE.replace("$COMMAND", questions[i].command).replace("$CHIPS", chips)
     preview.innerHTML = body
     preview.getElementsByClassName("text-button")[0].addEventListener("click", () => add(questions[i]))

@@ -37,12 +37,20 @@
 
 .import-preview-wrapper {
   display: grid;
-  grid-template-columns: 0.8fr 0.2fr;
+  grid-template-columns: repeat(auto-fit, minmax(100px, clamp(100px, 100vw, 400px)));
+  justify-items: right;
   padding: 20px;
   border-radius: var(--radius);
   margin: 10px;
   border: 1.5px solid var(--light-gray);
   gap: 10px;
+}
+
+.import-preview-tags-wrapper{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:5px;
 }
 
 .search-input-wrapper{
@@ -60,6 +68,10 @@
   border: none;
   padding: 10px;
   font-size: 0.9rem;
+}
+
+#importQuestionDialog-renderList{
+  all: unset;
 }
 
 
