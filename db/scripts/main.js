@@ -30,7 +30,7 @@ const getQuestion = (question) => {
 
 const render = async () => {
   const renderList = document.getElementById("renderList")
-  const response = await fetch("../../../data/ENEM.json")
+  const response = await fetch("../../data/ENEM.json")
 
   const json = await response.json()
   const questions = json.data
