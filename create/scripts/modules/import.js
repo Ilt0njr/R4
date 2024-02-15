@@ -42,7 +42,7 @@ const add = (question) => {
 
 const render = async () => {
   const renderList = document.getElementById("importQuestionDialog-renderList")
-  const response = await fetch("../../../data/ENEM.json")
+  const response = await fetch("https://ilt0njr.github.io/R4/data/ENEM.json")
 
   const json = await response.json()
   const questions = json.data
