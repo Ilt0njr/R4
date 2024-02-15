@@ -7,7 +7,8 @@ const shuffle = (a) => {
 
 export function shuffleExam(exam){
   shuffle(exam)
-  for (let i = exam.length - 1; i > 0; i--) {
+  for (let i = 0; i < exam.length; i++) {
     shuffle(exam[i].alternatives)
+    console.log(exam)
   }
 }

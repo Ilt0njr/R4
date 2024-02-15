@@ -115,7 +115,7 @@ export function createPDF(doc, test, QR, profName){
 
   doc.setFontSize(11);
   for (let i = 0; i < test.length; i++) {
-    posV += 4.5
+    posV += 5
     let j = 1
     for (let text of test[i].texts) {
       if (text.type == "text") {
@@ -124,7 +124,7 @@ export function createPDF(doc, test, QR, profName){
         doc.setFont(undefined, 'bold');
         doc.text(`Texto ${j}`, posH, posV)
         doc.setFont(undefined, 'normal');
-        posV += 4.5
+        posV += 5
         doc.text(textF, posH, posV + 4.5)
         posV += (textSizeGiver(textF)) + 10
       } else if (text.type == "image") {
@@ -132,7 +132,7 @@ export function createPDF(doc, test, QR, profName){
         doc.setFont(undefined, 'bold');
         doc.text(`Texto ${j}`, posH, posV)
         doc.setFont(undefined, 'normal');
-        posV += 4.5
+        posV += 5
         doc.addImage(text.content, posH, posV, (50*text.content.width)/text.content.height,50)
         posV += 60
       }
