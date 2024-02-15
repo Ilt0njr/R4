@@ -1,6 +1,6 @@
 .card {
   aspect-ratio: 1/1;
-  width: 100%;
+
   align-items: end;
   border-radius: var(--radius);
   border: 1.5px solid var(--dark-gray);
