@@ -1,5 +1,8 @@
 import "./modules/import/main.js"
 import "./modules/PDF/main.js"
+import "./modules/ia/main.js"
+
+
 import createObjectiveQuestion from "./modules/add.js"
 
 const addObjectiveQuestion = () => {

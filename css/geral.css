@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700;900&display=swap');
 
 @import "./nav.css";
 @import "./button.css";
@@ -8,6 +8,8 @@
 @import "./textarea.css";
 @import "./radio.css";
 @import "./dialog.css";
+@import "./spin.css";
+@import "./input.css";
 
 body {
   font-family: 'Lato', sans-serif;
@@ -21,7 +23,7 @@ body {
   --dark: #101010;
   --gray: #606060;
   --dark-gray: #404040;
-  --light-gray: #DDDDDD;
+  --light-gray: #EEEEEE;
   --radius: 20px;
 }
 

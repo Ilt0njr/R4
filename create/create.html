@@ -7,6 +7,14 @@
   <link rel="stylesheet" href="./create.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script type="importmap">
+    {
+        "imports": {
+          "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          
+        }
+      }
+  </script>
   <script src="./scripts/main.js" type="module"></script>
   <script src="../scripts/autoResizeTextarea.js"></script>
   <title>Criar Exame</title>
@@ -45,8 +53,24 @@
       <a id="closeAddQuestionDialog" class="material-symbols-outlined">close</a>
     </div>
     <div class="dialog-body">
-      <button id="addObjectiveQuestion" class="button">Adicionar Questão</button>
-      <button id="openImportQuestionDialog" class="button">Importar Questão</button>
+      <button id="addObjectiveQuestion" class="button">
+        Adicionar Questão
+        <span class="material-symbols-outlined">
+          add
+        </span>
+        </button>
+      <button id="openImportQuestionDialog" class="button">
+        Importar Questão
+        <span class="material-symbols-outlined">
+          upload_file
+        </span>
+        </button>
+      <button id="openGenerateIAQuestionDialog" class="button">
+        Gerar Questão
+        <span class="material-symbols-outlined">
+          neurology
+        </span>
+      </button>
     </div>
   </dialog>
 
@@ -56,13 +80,50 @@
       <a id="closeImportQuestionDialog" class="material-symbols-outlined">close</a>
     </div>
     <div class="dialog-body">
-      <div class="search-input-wrapper">
-        <input id="dialog-import-search" class="search-input" placeholder="Pesquisar..." />
+      <span class="text-input-wrapper">
+        <input placeholder="Informações da Questão..." class="text-input" id="dialog-import-search" />
         <span class="material-symbols-outlined">search</span>
-      </div>
+      </span>
       <ul id="importQuestionDialog-renderList">
       </ul>
     </div>
+  </dialog>
+
+  <dialog id="generateIAQuestionDialog">
+    <div class="dialog-top">
+      <span class="dialog-tittle">Gerar Questão Com Inteligência Artificial</span>
+      <a id="closeGenerateIAQuestionDialog" class="material-symbols-outlined">close</a>
+    </div>
+
+    <div class="generate-ia-question-wrapper">
+      
+      <ul>
+        <a>Instruções</a>
+        <li>Descreva algumas informações sobre a questão que deseja gerar, tais como tema e objetivos.</li>
+        <li>Sempre confira as informações geradas.</li>
+        <li>Serão feitas apenas 10 tentativas.</li>
+        <li>Caso não haja retorno tente mudar a sua entrada.</li>
+      </ul>
+      
+      
+      <span class="text-input-wrapper">
+        <input placeholder="Informações da Questão..." class="text-input" id="generate-ia-question-input" />
+     </span>
+     <div class="spin-wrapper">
+       <span id="ia-spin" class="spin"></span>
+       <span id="ia-spin-info"></span>
+     </div>
+      
+      <button id="generate-ia-question" class="button">
+        Gerar
+        <span class="material-symbols-outlined">send</span>
+      </button>
+
+
+
+    </div>
+    </div>
+
   </dialog>
 
 

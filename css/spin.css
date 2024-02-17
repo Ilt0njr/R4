@@ -1,0 +1,23 @@
+.spin {
+  animation: 1s linear infinite spinner;
+  border: 5px solid var(--light-gray);
+  border-top-color: var(--primary);
+  border-left-color: var(--primary);
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  display: none;
+}
+
+@keyframes spinner{
+  0% {
+    transform:  rotate(0deg)
+  }
+  50% {
+    transform:  rotate(70deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform:  rotate(360deg)
+  }
+}

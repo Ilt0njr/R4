@@ -1,4 +1,6 @@
 @import "../css/geral.css";
+@import "./css/import.css";
+@import "./css/ia.css";
 
 
 /*______________HEADER___________*/
@@ -31,48 +33,6 @@
   width: 100%;
 }
 
-
-
-/*__________________IMPORT________________*/
-
-.import-preview-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, clamp(100px, 100vw, 400px)));
-  justify-items: right;
-  padding: 20px;
-  border-radius: var(--radius);
-  margin: 10px;
-  border: 1.5px solid var(--light-gray);
-  gap: 10px;
-}
-
-.import-preview-tags-wrapper{
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap:5px;
-}
-
-.search-input-wrapper{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border-radius: 5px;
-  border: 1.5px solid var(--light-gray);
-  padding: 5px 15px;
-}
-
-.search-input{
-  width: clamp(200px, 60vw, 1000px);
-  outline: none;
-  border: none;
-  padding: 10px;
-  font-size: 0.9rem;
-}
-
-#importQuestionDialog-renderList{
-  all: unset;
-}
 
 
 /*______________BUTTONS WRAPPER___________*/

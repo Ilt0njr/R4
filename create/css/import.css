@@ -1,0 +1,21 @@
+.import-preview-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, clamp(100px, 100vw, 400px)));
+  justify-items: right;
+  padding: 20px;
+  border-radius: var(--radius);
+  margin: 20px 5px;
+  border: 1.5px solid var(--light-gray);
+  gap: 10px;
+}
+
+.import-preview-tags-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+#importQuestionDialog-renderList {
+  all: unset;
+}
