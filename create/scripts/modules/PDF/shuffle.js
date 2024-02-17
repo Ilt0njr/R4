@@ -5,7 +5,7 @@ const shuffle = (a) => {
   }
 }
 
-export function shuffleExam(exam){
+export default function shuffleExam(exam){
   shuffle(exam)
   for (let i = 0; i < exam.length; i++) {
     shuffle(exam[i].alternatives)

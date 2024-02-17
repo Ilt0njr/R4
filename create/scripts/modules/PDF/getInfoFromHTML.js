@@ -42,7 +42,7 @@ const getQuestion = (form) => {
   }
 }
 
-export function getInfoFromHTML() {
+export default function getInfoFromHTML() {
   const forms = document.forms
   const exam = []
   for (let i = 0; i < forms.length; i++) {

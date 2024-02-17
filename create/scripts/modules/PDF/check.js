@@ -1,4 +1,4 @@
-const toValidate = {
+const toCheck = {
 
   IsEmpty() {
     if (document.forms.length < 1) return false
@@ -53,7 +53,7 @@ const toValidate = {
 
 
 
-export function validate() {
+export default function check() {
   if (Object.values(toValidate).every(e => e() == true)) return true
   else {
     document.getElementById("getPDF").classList.toggle("error")

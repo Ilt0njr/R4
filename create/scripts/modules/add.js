@@ -151,7 +151,7 @@ function createQuestion(id) {
   return HTML
 }
 
-export function createObjectiveQuestion() {
+export default function createObjectiveQuestion() {
   const exam = document.getElementById("exam")
   const createID = () => {
     const D = new Date()
