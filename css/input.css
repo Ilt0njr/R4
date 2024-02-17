@@ -9,7 +9,7 @@
 
 .text-input-wrapper{
   position: relative;
-  width: clamp(200px, 80vw, 1000px);
+  width: clamp(200px, 80%, 800px);
   background-color: var(--light-gray);
   display: flex;
   flex-direction: row;
