@@ -1,8 +1,8 @@
-
+const { jsPDF } = window.jspdf;
 
 export default function createPDF(doc, test, QR, profName){
   doc.addPage()
-  const { jsPDF } = window.jspdf;
+  
   const width = doc.internal.pageSize.getWidth();
   const height = doc.internal.pageSize.getHeight();
   const arrAlfabeto = ["A", "B", "C", "D", "E"]

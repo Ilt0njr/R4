@@ -3,10 +3,10 @@ import createPDF from './createPDF.js'
 import check from './check.js'
 import { getQR, getAnswersForQR } from './QR.js'
 import shuffleExam from "./shuffle.js"
-
+const { jsPDF } = window.jspdf;
 
 function PDF() {
-  const { jsPDF } = window.jspdf;
+  
   if (check()) {
     const teacherName = prompt(`Qual nome completo do professor(a)?`)
     const nOfExams = parseInt(prompt(`Quantas provas diferentes devem ser geradas?`))
@@ -19,6 +19,8 @@ function PDF() {
       createPDF(doc, exam, QR, teacherName)
     }
     doc.save(`prova - ${teacherName}.pdf`)
+    
+    saveAs
   }
 }
 

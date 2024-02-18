@@ -9,6 +9,5 @@ export default function shuffleExam(exam){
   shuffle(exam)
   for (let i = 0; i < exam.length; i++) {
     shuffle(exam[i].alternatives)
-    console.log(exam)
   }
 }
