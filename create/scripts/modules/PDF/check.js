@@ -54,7 +54,7 @@ const toCheck = {
 
 
 export default function check() {
-  if (Object.values(toValidate).every(e => e() == true)) return true
+  if (Object.values(toCheck).every(e => e() == true)) return true
   else {
     document.getElementById("getPDF").classList.toggle("error")
     return false
