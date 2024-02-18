@@ -9,15 +9,6 @@ nav{
   left: 0;
 }
 
-nav a{
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  border: 1.5px solid var(--light-gray);
-  padding: 5px 20px;
-  border-radius: 100px;
-}
-
 nav h1{
   font-weight: 900;
   color: var(--primary)
