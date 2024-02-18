@@ -22,7 +22,8 @@
 /*__________________RENDER________________*/
 
 #renderList{
-  all: unset;
+  height: 90vh;
+  overflow-y: scroll;
 }
 
 .question{
