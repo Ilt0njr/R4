@@ -15,7 +15,6 @@
   -webkit-tap-highlight-color: transparent;
   text-decoration: none;
   position: relative;
-  z-index: 1;
 }
 
 .button:after{
